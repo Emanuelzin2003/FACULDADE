@@ -3,7 +3,6 @@
 
 typedef struct no{
 	int chave;
-	//campos....
 	struct no *prox;
 }TNo;
 
@@ -14,7 +13,7 @@ TNo *alocaNo(int k)
 	if (novo == NULL) return NULL;
 	novo->chave = k;
 	novo->prox = NULL;
-	return novo; //devolve o endere�o do n� para a main() / algu�m??
+	return novo; 
 }
 
 void insereInicio(int k,TNo **paux) //push
@@ -48,14 +47,13 @@ void removeInicio(TNo **paux)//pop
      {
         *paux = (*paux)->prox;
         free(aux);
-       // return paux;
-	 }
+     }
     else
     {
     	free(aux);
     	*paux=NULL;
 		return ;
-	}   
+    }   
 }
 
 int main()

@@ -26,7 +26,7 @@ void insereInicio(int k,TNo **paux) //push
 	
 }
 
-/*void imprimeLista(TNo *paux)//imprime pilha
+void imprimeLista(TNo *paux)//imprime pilha
 {
 	while(paux!=NULL)
 	{
@@ -35,7 +35,7 @@ void insereInicio(int k,TNo **paux) //push
 	}
 	
 }
-*/
+
 void removeInicio(TNo **paux)//pop
 {
    TNo *aux= *paux;
@@ -86,12 +86,11 @@ int main()
 					   	   removeInicio(&inicio);
 					   }
 				}break;
-			/*case 3:
+			case 3:
 				{
 				  
 				  imprimeLista(inicio);	
-				}break;*/
-
-		  }
-   }
+			}	}break;
+		}
+   	}
 }
